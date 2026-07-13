@@ -208,7 +208,7 @@ def build_dashboard(history: pd.DataFrame, report_date: date) -> dict:
     )
     if exact_rank is not None:
         narrative += (
-            f"On this exact calendar date,{exact_rank - 1} of the last {len(exact_hist)} years "
+            f"On this exact calendar date, {exact_rank - 1} of the last {len(exact_hist)} years "
             f"recorded a higher flow. "
         )
     if stats["pct_diff_from_median"] is not None:
