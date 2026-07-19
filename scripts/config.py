@@ -51,7 +51,7 @@ MEGADROUGHT_START_YEAR = 2000
 # +/- N days around "today" used to build the historical comparison sample.
 # A window smooths out the fact that snowmelt peaks don't land on the exact
 # same calendar day every year.
-WINDOW_DAYS = 3
+WINDOW_DAYS = 0
 
 # --- File paths --------------------------------------------------------
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
