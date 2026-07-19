@@ -201,16 +201,27 @@ def build_dashboard(history: pd.DataFrame, report_date: date) -> dict:
     window_end = report_date + timedelta(days=config.WINDOW_DAYS)
     window_label = f"{window_start.strftime('%b')} {window_start.day}\u2013{window_end.strftime('%b')} {window_end.day}"
 
-    narrative = (
-        f"{label_month_day}'s mean discharge at the Cisco gauge was {current_flow:,.0f} CFS, "
-        f"placing it {_percentile_phrase(stats['percentile'])} of observations from "
-        f"{window_label} since {config.START_YEAR}. "
-    )
-    if exact_rank is not None:
-        narrative += (
-            f"On this exact calendar date, {exact_rank - 1} of the last {len(exact_hist)} years "
-            f"recorded a higher flow. "
+    if config.WINDOW_DAYS == 0:
+        narrative = (
+            f"{label_month_day}'s mean discharge at the Cisco gauge was {current_flow:,.0f} CFS, "
+            f"placing it {_percentile_phrase(stats['percentile'])} of all {label_month_day} "
+            f"readings since {config.START_YEAR}. "
         )
+        if exact_rank is not None:
+            narrative += (
+                f"{exact_rank - 1} of the past {len(exact_hist)} years recorded a higher flow on this date. "
+            )
+    else:
+        narrative = (
+            f"{label_month_day}'s mean discharge at the Cisco gauge was {current_flow:,.0f} CFS, "
+            f"placing it {_percentile_phrase(stats['percentile'])} of observations from "
+            f"{window_label} since {config.START_YEAR}. "
+        )
+        if exact_rank is not None:
+            narrative += (
+                f"On this exact calendar date, {exact_rank - 1} of the last {len(exact_hist)} years "
+                f"recorded a higher flow. "
+            )
     if stats["pct_diff_from_median"] is not None:
         direction = "above" if stats["pct_diff_from_median"] >= 0 else "below"
         narrative += (
@@ -250,12 +261,13 @@ def main():
 
     dashboard = build_dashboard(history, report_date)
 
-    with open(config.DASHBOARD_JSON, "w") as f:
-        json.dump(dashboard, f, indent=2)
+    with open(config.DASHBOARD_JSON, "w", encoding="utf-8") as f:
+        json.dump(dashboard, f, indent=2, ensure_ascii=False)
 
     print(f"Wrote {config.DASHBOARD_JSON}")
-    print(json.dumps(dashboard, indent=2))
+    print(json.dumps(dashboard, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":
     main()
+
