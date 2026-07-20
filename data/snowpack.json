@@ -1,0 +1,291 @@
+{
+  "site_context": "SNOTEL stations in basins draining to USGS 09180500 (Colorado near Cisco, UT)",
+  "basins": "Colorado Headwaters (HUC 1401), Gunnison (1402), Dolores (14030002-04)",
+  "normal_period": "1991-2020 station medians",
+  "n_stations_with_normals": 34,
+  "generated_at": "2026-07-19T15:32:42.233803+00:00",
+  "years": [
+    {
+      "water_year": 1980,
+      "april1_pct_of_median": 121.1,
+      "peak_pct_of_median": 123.5,
+      "n_stations": 7
+    },
+    {
+      "water_year": 1981,
+      "april1_pct_of_median": 65.6,
+      "peak_pct_of_median": 65.2,
+      "n_stations": 21
+    },
+    {
+      "water_year": 1982,
+      "april1_pct_of_median": 127.1,
+      "peak_pct_of_median": 123.2,
+      "n_stations": 19
+    },
+    {
+      "water_year": 1983,
+      "april1_pct_of_median": 115.6,
+      "peak_pct_of_median": 134.5,
+      "n_stations": 21
+    },
+    {
+      "water_year": 1984,
+      "april1_pct_of_median": 134.8,
+      "peak_pct_of_median": 147.8,
+      "n_stations": 21
+    },
+    {
+      "water_year": 1985,
+      "april1_pct_of_median": 112.3,
+      "peak_pct_of_median": 111.6,
+      "n_stations": 21
+    },
+    {
+      "water_year": 1986,
+      "april1_pct_of_median": 119.4,
+      "peak_pct_of_median": 123.4,
+      "n_stations": 26
+    },
+    {
+      "water_year": 1987,
+      "april1_pct_of_median": 98.6,
+      "peak_pct_of_median": 95.1,
+      "n_stations": 30
+    },
+    {
+      "water_year": 1988,
+      "april1_pct_of_median": 93.7,
+      "peak_pct_of_median": 87.0,
+      "n_stations": 30
+    },
+    {
+      "water_year": 1989,
+      "april1_pct_of_median": 100.4,
+      "peak_pct_of_median": 102.4,
+      "n_stations": 30
+    },
+    {
+      "water_year": 1990,
+      "april1_pct_of_median": 75.7,
+      "peak_pct_of_median": 75.9,
+      "n_stations": 31
+    },
+    {
+      "water_year": 1991,
+      "april1_pct_of_median": 102.9,
+      "peak_pct_of_median": 100.6,
+      "n_stations": 31
+    },
+    {
+      "water_year": 1992,
+      "april1_pct_of_median": 95.6,
+      "peak_pct_of_median": 86.9,
+      "n_stations": 32
+    },
+    {
+      "water_year": 1993,
+      "april1_pct_of_median": 146.9,
+      "peak_pct_of_median": 146.3,
+      "n_stations": 32
+    },
+    {
+      "water_year": 1994,
+      "april1_pct_of_median": 91.5,
+      "peak_pct_of_median": 94.2,
+      "n_stations": 32
+    },
+    {
+      "water_year": 1995,
+      "april1_pct_of_median": 120.9,
+      "peak_pct_of_median": 135.9,
+      "n_stations": 32
+    },
+    {
+      "water_year": 1996,
+      "april1_pct_of_median": 136.5,
+      "peak_pct_of_median": 126.6,
+      "n_stations": 33
+    },
+    {
+      "water_year": 1997,
+      "april1_pct_of_median": 132.4,
+      "peak_pct_of_median": 139.4,
+      "n_stations": 33
+    },
+    {
+      "water_year": 1998,
+      "april1_pct_of_median": 97.8,
+      "peak_pct_of_median": 100.7,
+      "n_stations": 33
+    },
+    {
+      "water_year": 1999,
+      "april1_pct_of_median": 76.7,
+      "peak_pct_of_median": 92.0,
+      "n_stations": 33
+    },
+    {
+      "water_year": 2000,
+      "april1_pct_of_median": 101.2,
+      "peak_pct_of_median": 99.4,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2001,
+      "april1_pct_of_median": 89.6,
+      "peak_pct_of_median": 90.0,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2002,
+      "april1_pct_of_median": 60.7,
+      "peak_pct_of_median": 63.4,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2003,
+      "april1_pct_of_median": 100.3,
+      "peak_pct_of_median": 100.0,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2004,
+      "april1_pct_of_median": 70.8,
+      "peak_pct_of_median": 85.3,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2005,
+      "april1_pct_of_median": 108.9,
+      "peak_pct_of_median": 99.8,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2006,
+      "april1_pct_of_median": 112.7,
+      "peak_pct_of_median": 108.3,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2007,
+      "april1_pct_of_median": 87.6,
+      "peak_pct_of_median": 89.5,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2008,
+      "april1_pct_of_median": 138.6,
+      "peak_pct_of_median": 140.7,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2009,
+      "april1_pct_of_median": 119.9,
+      "peak_pct_of_median": 117.1,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2010,
+      "april1_pct_of_median": 97.4,
+      "peak_pct_of_median": 97.1,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2011,
+      "april1_pct_of_median": 134.9,
+      "peak_pct_of_median": 142.8,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2012,
+      "april1_pct_of_median": 52.6,
+      "peak_pct_of_median": 68.1,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2013,
+      "april1_pct_of_median": 73.4,
+      "peak_pct_of_median": 87.8,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2014,
+      "april1_pct_of_median": 124.2,
+      "peak_pct_of_median": 115.1,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2015,
+      "april1_pct_of_median": 69.8,
+      "peak_pct_of_median": 83.3,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2016,
+      "april1_pct_of_median": 103.5,
+      "peak_pct_of_median": 99.5,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2017,
+      "april1_pct_of_median": 109.7,
+      "peak_pct_of_median": 118.8,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2018,
+      "april1_pct_of_median": 70.0,
+      "peak_pct_of_median": 78.2,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2019,
+      "april1_pct_of_median": 140.2,
+      "peak_pct_of_median": 132.0,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2020,
+      "april1_pct_of_median": 108.9,
+      "peak_pct_of_median": 104.6,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2021,
+      "april1_pct_of_median": 87.8,
+      "peak_pct_of_median": 83.9,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2022,
+      "april1_pct_of_median": 92.8,
+      "peak_pct_of_median": 90.0,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2023,
+      "april1_pct_of_median": 137.5,
+      "peak_pct_of_median": 127.1,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2024,
+      "april1_pct_of_median": 106.3,
+      "peak_pct_of_median": 100.2,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2025,
+      "april1_pct_of_median": 88.7,
+      "peak_pct_of_median": 88.5,
+      "n_stations": 34
+    },
+    {
+      "water_year": 2026,
+      "april1_pct_of_median": 13.5,
+      "peak_pct_of_median": 51.8,
+      "n_stations": 34
+    }
+  ]
+}
