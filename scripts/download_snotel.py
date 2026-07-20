@@ -1,13 +1,13 @@
 """
 download_snotel.py
-
+ 
 Builds the snowpack dataset for the "The River Is Made of Snow" chapter:
 snow water equivalent (SWE) from every NRCS SNOTEL station in the basins
 that drain to the Cisco gauge, reduced to one April 1 value and one peak
 value per station per water year, then aggregated to a basin-level
 "percent of 1991-2020 median" -- the same framing NRCS and NOAA's river
 forecasters use.
-
+ 
 Which stations count: SNOTEL stations whose 8-digit hydrologic unit code
 (HUC) falls in the basins upstream of USGS gauge 09180500 --
   1401xxxx  Colorado Headwaters (Fraser, Blue, Eagle, Roaring Fork...)
@@ -17,46 +17,46 @@ Which stations count: SNOTEL stations whose 8-digit hydrologic unit code
   14030004  Lower Dolores
 (14030001 / 14030005 are the low-desert mainstem canyons -- no SNOTEL --
 and everything below the gauge, e.g. the Green River basin, is excluded.)
-
+ 
 Outputs:
   data/snotel_yearly.csv  - one row per station per water year
   data/snowpack.json      - basin summary per year (what the chapter reads)
-
+ 
 Run:
   python3 scripts/download_snotel.py
 First run backfills the full record (a few minutes, ~100 stations).
 Later runs only refresh the current water year.
 """
 from __future__ import annotations
-
+ 
 import json
 import sys
 import time
 from datetime import date, datetime, timezone
-
+ 
 import pandas as pd
 import requests
-
+ 
 import config
-
+ 
 API_BASE = "https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1"
 STATES = ["CO", "UT"]
 HUC_PREFIXES = ("1401", "1402", "14030002", "14030003", "14030004")
 NORMAL_START, NORMAL_END = 1991, 2020   # NRCS standard normal period
 MIN_NORMAL_YEARS = 20                   # station needs >=20 of the 30 normal years
 BACKFILL_BEGIN = "1979-10-01"           # water year 1980; SNOTEL barely predates this
-
+ 
 SNOTEL_CSV = config.DATA_DIR / "snotel_yearly.csv"
 SNOWPACK_JSON = config.DATA_DIR / "snowpack.json"
-
-
+ 
+ 
 def _get(url: str, params: dict, timeout: int = 60):
     resp = requests.get(url, params=params, timeout=timeout,
                         headers={"Accept": "application/json"})
     resp.raise_for_status()
     return resp.json()
-
-
+ 
+ 
 def fetch_basin_stations() -> list[dict]:
     """All SNOTEL stations in CO/UT measuring SWE, filtered to the HUCs
     that drain to the Cisco gauge."""
@@ -72,7 +72,7 @@ def fetch_basin_stations() -> list[dict]:
                   f"First 300 chars:\n{str(payload)[:300]}", file=sys.stderr)
             sys.exit(1)
         stations.extend(payload)
-
+ 
     picked = []
     missing_huc = 0
     for s in stations:
@@ -93,14 +93,22 @@ def fetch_basin_stations() -> list[dict]:
               f"  curl '{API_BASE}/stations?states=CO&networkCds=SNTL&elements=WTEQ'\n"
               "and send the first station object to debug.", file=sys.stderr)
         sys.exit(1)
-
+ 
     picked = [p for p in picked if p["triplet"]]
+    # The API can return the same station more than once -- dedupe by triplet.
+    seen: set = set()
+    unique = []
+    for p in picked:
+        if p["triplet"] not in seen:
+            seen.add(p["triplet"])
+            unique.append(p)
+    picked = unique
     picked.sort(key=lambda p: p["triplet"])
     print(f"Found {len(picked)} SNOTEL stations in the Cisco drainage "
           f"({missing_huc} stations statewide lacked HUC metadata and were skipped).")
     return picked
-
-
+ 
+ 
 def fetch_station_daily_swe(triplet: str, begin: str, end: str) -> pd.DataFrame:
     """Daily WTEQ (inches) for one station. Returns columns: date, swe."""
     payload = _get(f"{API_BASE}/data", {
@@ -123,8 +131,8 @@ def fetch_station_daily_swe(triplet: str, begin: str, end: str) -> pd.DataFrame:
         df["date"] = pd.to_datetime(df["date"], errors="coerce")
         df = df.dropna(subset=["date"]).drop_duplicates(subset="date").sort_values("date")
     return df
-
-
+ 
+ 
 def reduce_to_water_years(daily: pd.DataFrame) -> pd.DataFrame:
     """Collapse daily SWE to one row per water year:
     april1_swe, peak_swe, peak_date. Water year N = Oct N-1 through Sep N."""
@@ -132,7 +140,7 @@ def reduce_to_water_years(daily: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame(columns=["water_year", "april1_swe", "peak_swe", "peak_date"])
     df = daily.copy()
     df["water_year"] = df["date"].dt.year + (df["date"].dt.month >= 10).astype(int)
-
+ 
     out = []
     for wy, grp in df.groupby("water_year"):
         apr1 = grp[(grp["date"].dt.month == 4) & (grp["date"].dt.day == 1)]
@@ -143,16 +151,32 @@ def reduce_to_water_years(daily: pd.DataFrame) -> pd.DataFrame:
             "april1_swe": april1_swe,
             "peak_swe": float(peak_row["swe"]),
             "peak_date": peak_row["date"].strftime("%Y-%m-%d"),
+            "n_days": int(len(grp)),
+            # Did this station actually record data in midwinter (Dec-Feb)?
+            # A station that came online in June contributes a "year" of
+            # snowless summer days whose "peak" of 0 would poison the stats.
+            "has_midwinter": bool(grp["date"].dt.month.isin([12, 1, 2]).any()),
         })
     return pd.DataFrame(out)
-
-
+ 
+ 
 def compute_basin_summary(yearly: pd.DataFrame) -> dict:
     """Percent-of-median aggregation, NRCS-style: each station is compared
     with its own 1991-2020 median first, then the basin value for a year is
     the median of the station percentages. This keeps early years honest
     even though fewer stations existed then (each station only ever
     competes against itself)."""
+    if "n_days" not in yearly.columns or "has_midwinter" not in yearly.columns:
+        print("ERROR: snotel_yearly.csv is from an older version of this script "
+              "and lacks coverage columns. Delete data/snotel_yearly.csv and "
+              "data/snowpack.json, then rerun for a fresh backfill.", file=sys.stderr)
+        sys.exit(1)
+ 
+    # Belt and braces: one row per station per water year.
+    yearly = yearly.drop_duplicates(subset=["triplet", "water_year"], keep="first")
+    # Only station-years with real winter coverage count toward the stats.
+    yearly = yearly[(yearly["n_days"] >= 150) & (yearly["has_midwinter"])]
+ 
     normals = {}
     for triplet, grp in yearly.groupby("triplet"):
         window = grp[(grp["water_year"] >= NORMAL_START) & (grp["water_year"] <= NORMAL_END)]
@@ -160,7 +184,7 @@ def compute_basin_summary(yearly: pd.DataFrame) -> dict:
         pk = window["peak_swe"].dropna()
         if len(apr) >= MIN_NORMAL_YEARS and apr.median() > 0:
             normals[triplet] = {"apr": float(apr.median()), "peak": float(pk.median())}
-
+ 
     years_out = []
     for wy, grp in yearly.groupby("water_year"):
         apr_pcts, peak_pcts = [], []
@@ -180,7 +204,7 @@ def compute_basin_summary(yearly: pd.DataFrame) -> dict:
             "peak_pct_of_median": round(float(pd.Series(peak_pcts).median()), 1) if peak_pcts else None,
             "n_stations": len(apr_pcts) or len(peak_pcts),
         })
-
+ 
     years_out.sort(key=lambda y: y["water_year"])
     return {
         "site_context": "SNOTEL stations in basins draining to USGS 09180500 (Colorado near Cisco, UT)",
@@ -190,14 +214,14 @@ def compute_basin_summary(yearly: pd.DataFrame) -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "years": years_out,
     }
-
-
+ 
+ 
 def main():
     stations = fetch_basin_stations()
     if not stations:
         print("ERROR: no stations matched the basin HUCs. Nothing to do.", file=sys.stderr)
         sys.exit(1)
-
+ 
     existing = None
     begin = BACKFILL_BEGIN
     if SNOTEL_CSV.exists():
@@ -209,7 +233,7 @@ def main():
     else:
         print(f"No existing data -- full backfill from {begin}. "
               f"~{len(stations)} stations, this takes a few minutes...")
-
+ 
     end = date.today().isoformat()
     frames = []
     for i, st in enumerate(stations, 1):
@@ -228,28 +252,28 @@ def main():
         if i % 10 == 0:
             print(f"  ...{i}/{len(stations)} stations done")
         time.sleep(0.5)  # be polite to the NRCS API
-
+ 
     if not frames:
         print("ERROR: no SWE data returned for any station.", file=sys.stderr)
         sys.exit(1)
-
+ 
     new_data = pd.concat(frames, ignore_index=True)
     combined = pd.concat([existing, new_data], ignore_index=True) if existing is not None else new_data
     combined = combined.sort_values(["triplet", "water_year"])
     combined.to_csv(SNOTEL_CSV, index=False)
     print(f"Saved {len(combined)} station-year rows to {SNOTEL_CSV}")
-
+ 
     summary = compute_basin_summary(combined)
     with open(SNOWPACK_JSON, "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2, ensure_ascii=False)
     print(f"Wrote basin summary to {SNOWPACK_JSON}")
-
+ 
     recent = summary["years"][-3:]
     print("\nMost recent years (April 1 % of median):")
     for y in recent:
         print(f"  WY{y['water_year']}: {y['april1_pct_of_median']}% "
               f"({y['n_stations']} stations)")
-
-
+ 
+ 
 if __name__ == "__main__":
     main()
