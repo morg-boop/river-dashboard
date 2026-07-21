@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-07-19",
-  "generated_at": "2026-07-20T19:15:44.432101+00:00",
+  "report_date": "2026-07-20",
+  "generated_at": "2026-07-21T17:55:52.168822+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 1570.0,
-  "rank_same_date_only": 50,
+  "daily_mean_flow": 1600.0,
+  "rank_same_date_only": 51,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 50,
-  "percentile": 3.9,
-  "median": 4810.0,
-  "mean": 6670.0,
-  "min": 1250.0,
-  "max": 30000.0,
-  "std": 5687.3,
-  "pct_diff_from_median": -67.4,
+  "rank_in_window": 51,
+  "percentile": 2.0,
+  "median": 4600.0,
+  "mean": 6486.1,
+  "min": 1440.0,
+  "max": 29100.0,
+  "std": 5456.0,
+  "pct_diff_from_median": -65.2,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -26,21 +26,21 @@
     "n_observations": 26,
     "rank_in_window": 26,
     "percentile": 3.8,
-    "median": 4000.0,
-    "mean": 5204.6,
-    "min": 1400.0,
-    "max": 19500.0,
-    "std": 4098.2,
-    "pct_diff_from_median": -60.8,
+    "median": 4035.0,
+    "mean": 5097.3,
+    "min": 1440.0,
+    "max": 20100.0,
+    "std": 4062.9,
+    "pct_diff_from_median": -60.3,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "July 19's mean discharge at the Cisco gauge was 1,570 CFS, placing it in the 4th percentile of all July 19 readings since 1975. 49 of the past 51 years recorded a higher flow on this date. Discharge is 67% below the historical median for this time of year. Compared with only the years since 2000, July 19 ranks in the 4th percentile and is 61% below that more recent median.",
+  "narrative": "July 20's mean discharge at the Cisco gauge was 1,600 CFS, placing it in the 2nd percentile of all July 20 readings since 1975. 50 of the past 51 years recorded a higher flow on this date. Discharge is 65% below the historical median for this time of year. Compared with only the years since 2000, July 20 ranks in the 4th percentile and is 60% below that more recent median.",
   "current_conditions": {
-    "flow": 1580.0,
-    "timestamp": "2026-07-20T19:00:00+00:00"
+    "flow": 1610.0,
+    "timestamp": "2026-07-21T17:00:00+00:00"
   }
 }
