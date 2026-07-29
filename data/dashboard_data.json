@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-07-27",
-  "generated_at": "2026-07-28T18:02:23.345558+00:00",
+  "report_date": "2026-07-28",
+  "generated_at": "2026-07-29T17:50:25.494157+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 1890.0,
-  "rank_same_date_only": 51,
+  "daily_mean_flow": 1730.0,
+  "rank_same_date_only": 52,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 51,
-  "percentile": 2.0,
-  "median": 4230.0,
-  "mean": 5521.0,
-  "min": 1750.0,
-  "max": 19000.0,
-  "std": 3988.3,
-  "pct_diff_from_median": -55.3,
+  "rank_in_window": 52,
+  "percentile": 0.0,
+  "median": 4050.0,
+  "mean": 5400.4,
+  "min": 1890.0,
+  "max": 18500.0,
+  "std": 3759.4,
+  "pct_diff_from_median": -57.3,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -24,23 +24,23 @@
   "since_megadrought": {
     "n_years_in_sample": 27,
     "n_observations": 26,
-    "rank_in_window": 26,
-    "percentile": 3.8,
-    "median": 3295.0,
-    "mean": 4420.8,
-    "min": 1750.0,
-    "max": 12300.0,
-    "std": 2682.2,
-    "pct_diff_from_median": -42.6,
+    "rank_in_window": 27,
+    "percentile": 0.0,
+    "median": 3360.0,
+    "mean": 4400.4,
+    "min": 1890.0,
+    "max": 11800.0,
+    "std": 2599.9,
+    "pct_diff_from_median": -48.5,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "July 27's mean discharge at the Cisco gauge was 1,890 CFS, placing it in the 2nd percentile of all July 27 readings since 1975. 50 of the past 51 years recorded a higher flow on this date. Discharge is 55% below the historical median for this time of year. Compared with only the years since 2000, July 27 ranks in the 4th percentile and is 43% below that more recent median.",
+  "narrative": "July 28's mean discharge at the Cisco gauge was 1,730 CFS, placing it below the 1st percentile of all July 28 readings since 1975. 51 of the past 51 years recorded a higher flow on this date. Discharge is 57% below the historical median for this time of year. Compared with only the years since 2000, July 28 ranks below the 1st percentile and is 48% below that more recent median.",
   "current_conditions": {
-    "flow": 1720.0,
-    "timestamp": "2026-07-28T17:00:00+00:00"
+    "flow": 1650.0,
+    "timestamp": "2026-07-29T17:00:00+00:00"
   }
 }
