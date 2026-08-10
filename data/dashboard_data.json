@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-08-08",
-  "generated_at": "2026-08-09T13:46:56.702233+00:00",
+  "report_date": "2026-08-09",
+  "generated_at": "2026-08-10T14:18:50.170881+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 1270.0,
+  "daily_mean_flow": 1250.0,
   "rank_same_date_only": 52,
   "n_years_in_sample": 52,
   "n_observations": 51,
   "rank_in_window": 52,
   "percentile": 0.0,
-  "median": 4030.0,
-  "mean": 4552.9,
-  "min": 1380.0,
-  "max": 14100.0,
-  "std": 2676.5,
-  "pct_diff_from_median": -68.5,
+  "median": 4140.0,
+  "mean": 4467.5,
+  "min": 1360.0,
+  "max": 13700.0,
+  "std": 2552.6,
+  "pct_diff_from_median": -69.8,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -26,21 +26,21 @@
     "n_observations": 26,
     "rank_in_window": 27,
     "percentile": 0.0,
-    "median": 3910.0,
-    "mean": 4085.4,
-    "min": 2170.0,
-    "max": 8150.0,
-    "std": 1651.7,
-    "pct_diff_from_median": -67.5,
+    "median": 4185.0,
+    "mean": 4027.7,
+    "min": 2110.0,
+    "max": 7570.0,
+    "std": 1616.2,
+    "pct_diff_from_median": -70.1,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "August 8's mean discharge at the Cisco gauge was 1,270 CFS, placing it below the 1st percentile of all August 8 readings since 1975. 51 of the past 51 years recorded a higher flow on this date. Discharge is 68% below the historical median for this time of year. Compared with only the years since 2000, August 8 ranks below the 1st percentile and is 68% below that more recent median.",
+  "narrative": "August 9's mean discharge at the Cisco gauge was 1,250 CFS, placing it below the 1st percentile of all August 9 readings since 1975. 51 of the past 51 years recorded a higher flow on this date. Discharge is 70% below the historical median for this time of year. Compared with only the years since 2000, August 9 ranks below the 1st percentile and is 70% below that more recent median.",
   "current_conditions": {
-    "flow": 1290.0,
-    "timestamp": "2026-08-09T13:00:00+00:00"
+    "flow": 1400.0,
+    "timestamp": "2026-08-10T14:00:00+00:00"
   }
 }
