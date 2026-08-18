@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-08-16",
-  "generated_at": "2026-08-17T13:36:47.579289+00:00",
+  "report_date": "2026-08-17",
+  "generated_at": "2026-08-18T13:39:18.938290+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 1710.0,
-  "rank_same_date_only": 50,
+  "daily_mean_flow": 1680.0,
+  "rank_same_date_only": 51,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 50,
-  "percentile": 3.9,
-  "median": 3670.0,
-  "mean": 4097.3,
-  "min": 1410.0,
-  "max": 10500.0,
-  "std": 1987.3,
-  "pct_diff_from_median": -53.4,
+  "rank_in_window": 51,
+  "percentile": 2.0,
+  "median": 3620.0,
+  "mean": 4035.3,
+  "min": 1400.0,
+  "max": 10100.0,
+  "std": 1842.5,
+  "pct_diff_from_median": -53.6,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -26,21 +26,21 @@
     "n_observations": 26,
     "rank_in_window": 26,
     "percentile": 3.8,
-    "median": 3710.0,
-    "mean": 3574.6,
-    "min": 1410.0,
-    "max": 5660.0,
-    "std": 1150.1,
-    "pct_diff_from_median": -53.9,
+    "median": 3555.0,
+    "mean": 3516.5,
+    "min": 1400.0,
+    "max": 5410.0,
+    "std": 1055.9,
+    "pct_diff_from_median": -52.7,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "August 16's mean discharge at the Cisco gauge was 1,710 CFS, placing it in the 4th percentile of all August 16 readings since 1975. 49 of the past 51 years recorded a higher flow on this date. Discharge is 53% below the historical median for this time of year. Compared with only the years since 2000, August 16 ranks in the 4th percentile and is 54% below that more recent median.",
+  "narrative": "August 17's mean discharge at the Cisco gauge was 1,680 CFS, placing it in the 2nd percentile of all August 17 readings since 1975. 50 of the past 51 years recorded a higher flow on this date. Discharge is 54% below the historical median for this time of year. Compared with only the years since 2000, August 17 ranks in the 4th percentile and is 53% below that more recent median.",
   "current_conditions": {
-    "flow": 1740.0,
-    "timestamp": "2026-08-17T13:00:00+00:00"
+    "flow": 1710.0,
+    "timestamp": "2026-08-18T13:00:00+00:00"
   }
 }
