@@ -1,8 +1,8 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-08-24",
-  "generated_at": "2026-08-25T13:46:21.050599+00:00",
+  "report_date": "2026-08-25",
+  "generated_at": "2026-08-26T13:52:10.326114+00:00",
   "window_days": 0,
   "start_year": 1975,
   "daily_mean_flow": 1550.0,
@@ -11,12 +11,12 @@
   "n_observations": 51,
   "rank_in_window": 52,
   "percentile": 0.0,
-  "median": 3550.0,
-  "mean": 3959.4,
-  "min": 1600.0,
-  "max": 12400.0,
-  "std": 1823.5,
-  "pct_diff_from_median": -56.3,
+  "median": 3590.0,
+  "mean": 4001.0,
+  "min": 1640.0,
+  "max": 12100.0,
+  "std": 1872.9,
+  "pct_diff_from_median": -56.8,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -26,21 +26,21 @@
     "n_observations": 26,
     "rank_in_window": 27,
     "percentile": 0.0,
-    "median": 3520.0,
-    "mean": 3536.2,
-    "min": 1880.0,
-    "max": 5180.0,
-    "std": 891.8,
-    "pct_diff_from_median": -56.0,
+    "median": 3550.0,
+    "mean": 3495.4,
+    "min": 1850.0,
+    "max": 5310.0,
+    "std": 841.7,
+    "pct_diff_from_median": -56.3,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "August 24's mean discharge at the Cisco gauge was 1,550 CFS, placing it below the 1st percentile of all August 24 readings since 1975. 51 of the past 51 years recorded a higher flow on this date. Discharge is 56% below the historical median for this time of year. Compared with only the years since 2000, August 24 ranks below the 1st percentile and is 56% below that more recent median.",
+  "narrative": "August 25's mean discharge at the Cisco gauge was 1,550 CFS, placing it below the 1st percentile of all August 25 readings since 1975. 51 of the past 51 years recorded a higher flow on this date. Discharge is 57% below the historical median for this time of year. Compared with only the years since 2000, August 25 ranks below the 1st percentile and is 56% below that more recent median.",
   "current_conditions": {
-    "flow": 1530.0,
-    "timestamp": "2026-08-25T13:00:00+00:00"
+    "flow": 1710.0,
+    "timestamp": "2026-08-26T13:00:00+00:00"
   }
 }
