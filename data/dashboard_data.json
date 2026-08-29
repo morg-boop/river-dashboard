@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-08-27",
-  "generated_at": "2026-08-28T22:52:12.878603+00:00",
+  "report_date": "2026-08-28",
+  "generated_at": "2026-08-29T16:57:46.860495+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 1580.0,
+  "daily_mean_flow": 1530.0,
   "rank_same_date_only": 51,
   "n_years_in_sample": 52,
   "n_observations": 51,
   "rank_in_window": 51,
   "percentile": 2.0,
-  "median": 3670.0,
-  "mean": 4012.2,
-  "min": 1550.0,
-  "max": 11600.0,
-  "std": 1828.8,
-  "pct_diff_from_median": -56.9,
+  "median": 3740.0,
+  "mean": 4000.6,
+  "min": 1450.0,
+  "max": 10700.0,
+  "std": 1682.1,
+  "pct_diff_from_median": -59.1,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -26,21 +26,21 @@
     "n_observations": 26,
     "rank_in_window": 26,
     "percentile": 3.8,
-    "median": 3600.0,
-    "mean": 3539.6,
-    "min": 1550.0,
-    "max": 5100.0,
-    "std": 899.2,
-    "pct_diff_from_median": -56.1,
+    "median": 3705.0,
+    "mean": 3645.8,
+    "min": 1450.0,
+    "max": 5460.0,
+    "std": 923.5,
+    "pct_diff_from_median": -58.7,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "August 27's mean discharge at the Cisco gauge was 1,580 CFS, placing it in the 2nd percentile of all August 27 readings since 1975. 50 of the past 51 years recorded a higher flow on this date. Discharge is 57% below the historical median for this time of year. Compared with only the years since 2000, August 27 ranks in the 4th percentile and is 56% below that more recent median.",
+  "narrative": "August 28's mean discharge at the Cisco gauge was 1,530 CFS, placing it in the 2nd percentile of all August 28 readings since 1975. 50 of the past 51 years recorded a higher flow on this date. Discharge is 59% below the historical median for this time of year. Compared with only the years since 2000, August 28 ranks in the 4th percentile and is 59% below that more recent median.",
   "current_conditions": {
-    "flow": 1420.0,
-    "timestamp": "2026-08-28T22:00:00+00:00"
+    "flow": 1520.0,
+    "timestamp": "2026-08-29T16:00:00+00:00"
   }
 }
