@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-08-30",
-  "generated_at": "2026-08-31T19:22:29.393784+00:00",
+  "report_date": "2026-08-31",
+  "generated_at": "2026-09-01T17:08:22.510472+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 1520.0,
-  "rank_same_date_only": 52,
+  "daily_mean_flow": 2230.0,
+  "rank_same_date_only": 47,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 52,
-  "percentile": 0.0,
-  "median": 3550.0,
-  "mean": 3885.7,
-  "min": 1690.0,
-  "max": 10000.0,
-  "std": 1588.4,
-  "pct_diff_from_median": -57.2,
+  "rank_in_window": 47,
+  "percentile": 9.8,
+  "median": 3520.0,
+  "mean": 3798.2,
+  "min": 1600.0,
+  "max": 9600.0,
+  "std": 1517.4,
+  "pct_diff_from_median": -36.6,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -24,23 +24,23 @@
   "since_megadrought": {
     "n_years_in_sample": 27,
     "n_observations": 26,
-    "rank_in_window": 27,
-    "percentile": 0.0,
-    "median": 3485.0,
-    "mean": 3530.4,
-    "min": 1690.0,
-    "max": 5510.0,
-    "std": 912.1,
-    "pct_diff_from_median": -56.4,
+    "rank_in_window": 26,
+    "percentile": 3.8,
+    "median": 3460.0,
+    "mean": 3487.7,
+    "min": 1600.0,
+    "max": 5280.0,
+    "std": 913.9,
+    "pct_diff_from_median": -35.5,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "August 30's mean discharge at the Cisco gauge was 1,520 CFS, placing it below the 1st percentile of all August 30 readings since 1975. 51 of the past 51 years recorded a higher flow on this date. Discharge is 57% below the historical median for this time of year. Compared with only the years since 2000, August 30 ranks below the 1st percentile and is 56% below that more recent median.",
+  "narrative": "August 31's mean discharge at the Cisco gauge was 2,230 CFS, placing it in the 10th percentile of all August 31 readings since 1975. 46 of the past 51 years recorded a higher flow on this date. Discharge is 37% below the historical median for this time of year. Compared with only the years since 2000, August 31 ranks in the 4th percentile and is 36% below that more recent median.",
   "current_conditions": {
-    "flow": 2060.0,
-    "timestamp": "2026-08-31T19:00:00+00:00"
+    "flow": 2480.0,
+    "timestamp": "2026-09-01T16:00:00+00:00"
   }
 }
