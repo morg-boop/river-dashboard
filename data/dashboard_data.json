@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-09-03",
-  "generated_at": "2026-09-04T16:42:57.320007+00:00",
+  "report_date": "2026-09-04",
+  "generated_at": "2026-09-05T15:45:53.045296+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 2250.0,
-  "rank_same_date_only": 46,
+  "daily_mean_flow": 2200.0,
+  "rank_same_date_only": 49,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 46,
-  "percentile": 9.8,
-  "median": 3550.0,
-  "mean": 3731.2,
-  "min": 1530.0,
-  "max": 9630.0,
-  "std": 1433.5,
-  "pct_diff_from_median": -36.6,
+  "rank_in_window": 49,
+  "percentile": 5.9,
+  "median": 3510.0,
+  "mean": 3692.0,
+  "min": 1560.0,
+  "max": 10100.0,
+  "std": 1487.5,
+  "pct_diff_from_median": -37.3,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -24,23 +24,23 @@
   "since_megadrought": {
     "n_years_in_sample": 27,
     "n_observations": 26,
-    "rank_in_window": 25,
-    "percentile": 7.7,
-    "median": 3465.0,
-    "mean": 3400.0,
-    "min": 1530.0,
-    "max": 5150.0,
-    "std": 855.1,
-    "pct_diff_from_median": -35.1,
+    "rank_in_window": 26,
+    "percentile": 3.8,
+    "median": 3435.0,
+    "mean": 3346.2,
+    "min": 1560.0,
+    "max": 5050.0,
+    "std": 863.3,
+    "pct_diff_from_median": -36.0,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "September 3's mean discharge at the Cisco gauge was 2,250 CFS, placing it in the 10th percentile of all September 3 readings since 1975. 45 of the past 51 years recorded a higher flow on this date. Discharge is 37% below the historical median for this time of year. Compared with only the years since 2000, September 3 ranks in the 8th percentile and is 35% below that more recent median.",
+  "narrative": "September 4's mean discharge at the Cisco gauge was 2,200 CFS, placing it in the 6th percentile of all September 4 readings since 1975. 48 of the past 51 years recorded a higher flow on this date. Discharge is 37% below the historical median for this time of year. Compared with only the years since 2000, September 4 ranks in the 4th percentile and is 36% below that more recent median.",
   "current_conditions": {
-    "flow": 2140.0,
-    "timestamp": "2026-09-04T16:00:00+00:00"
+    "flow": 2120.0,
+    "timestamp": "2026-09-05T15:00:00+00:00"
   }
 }
