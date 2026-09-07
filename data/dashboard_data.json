@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-09-05",
-  "generated_at": "2026-09-06T15:58:05.631434+00:00",
+  "report_date": "2026-09-06",
+  "generated_at": "2026-09-07T18:04:55.832546+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 2080.0,
-  "rank_same_date_only": 49,
+  "daily_mean_flow": 1870.0,
+  "rank_same_date_only": 51,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 49,
-  "percentile": 5.9,
-  "median": 3450.0,
-  "mean": 3656.7,
-  "min": 1480.0,
-  "max": 9460.0,
-  "std": 1426.4,
-  "pct_diff_from_median": -39.7,
+  "rank_in_window": 51,
+  "percentile": 2.0,
+  "median": 3380.0,
+  "mean": 3648.0,
+  "min": 1440.0,
+  "max": 8720.0,
+  "std": 1345.6,
+  "pct_diff_from_median": -44.7,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -26,21 +26,21 @@
     "n_observations": 26,
     "rank_in_window": 26,
     "percentile": 3.8,
-    "median": 3365.0,
-    "mean": 3335.4,
-    "min": 1480.0,
-    "max": 4870.0,
-    "std": 848.4,
-    "pct_diff_from_median": -38.2,
+    "median": 3375.0,
+    "mean": 3319.6,
+    "min": 1440.0,
+    "max": 5000.0,
+    "std": 850.5,
+    "pct_diff_from_median": -44.6,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "September 5's mean discharge at the Cisco gauge was 2,080 CFS, placing it in the 6th percentile of all September 5 readings since 1975. 48 of the past 51 years recorded a higher flow on this date. Discharge is 40% below the historical median for this time of year. Compared with only the years since 2000, September 5 ranks in the 4th percentile and is 38% below that more recent median.",
+  "narrative": "September 6's mean discharge at the Cisco gauge was 1,870 CFS, placing it in the 2nd percentile of all September 6 readings since 1975. 50 of the past 51 years recorded a higher flow on this date. Discharge is 45% below the historical median for this time of year. Compared with only the years since 2000, September 6 ranks in the 4th percentile and is 45% below that more recent median.",
   "current_conditions": {
-    "flow": 1920.0,
-    "timestamp": "2026-09-06T15:00:00+00:00"
+    "flow": 1740.0,
+    "timestamp": "2026-09-07T17:00:00+00:00"
   }
 }
