@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-09-10",
-  "generated_at": "2026-09-11T16:53:36.939334+00:00",
+  "report_date": "2026-09-11",
+  "generated_at": "2026-09-12T15:58:44.118362+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 1610.0,
+  "daily_mean_flow": 1550.0,
   "rank_same_date_only": 52,
   "n_years_in_sample": 52,
   "n_observations": 51,
   "rank_in_window": 52,
   "percentile": 0.0,
-  "median": 3700.0,
-  "mean": 4020.0,
-  "min": 1750.0,
-  "max": 7360.0,
-  "std": 1387.2,
-  "pct_diff_from_median": -56.5,
+  "median": 3760.0,
+  "mean": 4125.7,
+  "min": 1900.0,
+  "max": 8740.0,
+  "std": 1549.1,
+  "pct_diff_from_median": -58.8,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -26,21 +26,21 @@
     "n_observations": 26,
     "rank_in_window": 27,
     "percentile": 0.0,
-    "median": 3705.0,
-    "mean": 3902.7,
-    "min": 2050.0,
-    "max": 7360.0,
-    "std": 1235.8,
-    "pct_diff_from_median": -56.5,
+    "median": 3785.0,
+    "mean": 3993.1,
+    "min": 2270.0,
+    "max": 8680.0,
+    "std": 1469.4,
+    "pct_diff_from_median": -59.0,
     "badge": {
       "label": "Much Below Normal",
       "emoji": "🔴"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "September 10's mean discharge at the Cisco gauge was 1,610 CFS, placing it below the 1st percentile of all September 10 readings since 1975. 51 of the past 51 years recorded a higher flow on this date. Discharge is 56% below the historical median for this time of year. Compared with only the years since 2000, September 10 ranks below the 1st percentile and is 56% below that more recent median.",
+  "narrative": "September 11's mean discharge at the Cisco gauge was 1,550 CFS, placing it below the 1st percentile of all September 11 readings since 1975. 51 of the past 51 years recorded a higher flow on this date. Discharge is 59% below the historical median for this time of year. Compared with only the years since 2000, September 11 ranks below the 1st percentile and is 59% below that more recent median.",
   "current_conditions": {
-    "flow": 1580.0,
-    "timestamp": "2026-09-11T16:00:00+00:00"
+    "flow": 1490.0,
+    "timestamp": "2026-09-12T15:00:00+00:00"
   }
 }
