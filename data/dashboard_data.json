@@ -1,46 +1,46 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-09-16",
-  "generated_at": "2026-09-17T17:26:51.962461+00:00",
+  "report_date": "2026-09-17",
+  "generated_at": "2026-09-18T16:55:19.660403+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 3520.0,
-  "rank_same_date_only": 36,
+  "daily_mean_flow": 3180.0,
+  "rank_same_date_only": 43,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 36,
-  "percentile": 29.4,
-  "median": 4040.0,
-  "mean": 4255.5,
-  "min": 2030.0,
-  "max": 7800.0,
-  "std": 1282.7,
-  "pct_diff_from_median": -12.9,
+  "rank_in_window": 43,
+  "percentile": 17.6,
+  "median": 4010.0,
+  "mean": 4281.2,
+  "min": 2050.0,
+  "max": 8050.0,
+  "std": 1361.8,
+  "pct_diff_from_median": -20.7,
   "badge": {
-    "label": "Near Normal",
-    "emoji": "🟢"
+    "label": "Below Normal",
+    "emoji": "🟠"
   },
   "since_megadrought": {
     "n_years_in_sample": 27,
     "n_observations": 26,
-    "rank_in_window": 17,
-    "percentile": 34.6,
-    "median": 3780.0,
-    "mean": 3892.7,
-    "min": 2030.0,
-    "max": 6310.0,
-    "std": 1017.3,
-    "pct_diff_from_median": -6.9,
+    "rank_in_window": 21,
+    "percentile": 23.1,
+    "median": 3805.0,
+    "mean": 3871.2,
+    "min": 2050.0,
+    "max": 5900.0,
+    "std": 981.0,
+    "pct_diff_from_median": -16.4,
     "badge": {
-      "label": "Near Normal",
-      "emoji": "🟢"
+      "label": "Below Normal",
+      "emoji": "🟠"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "September 16's mean discharge at the Cisco gauge was 3,520 CFS, placing it in the 29th percentile of all September 16 readings since 1975. 35 of the past 51 years recorded a higher flow on this date. Discharge is 13% below the historical median for this time of year. Compared with only the years since 2000, September 16 ranks in the 35th percentile and is 7% below that more recent median.",
+  "narrative": "September 17's mean discharge at the Cisco gauge was 3,180 CFS, placing it in the 18th percentile of all September 17 readings since 1975. 42 of the past 51 years recorded a higher flow on this date. Discharge is 21% below the historical median for this time of year. Compared with only the years since 2000, September 17 ranks in the 23rd percentile and is 16% below that more recent median.",
   "current_conditions": {
-    "flow": 2920.0,
-    "timestamp": "2026-09-17T17:00:00+00:00"
+    "flow": 3210.0,
+    "timestamp": "2026-09-18T16:00:00+00:00"
   }
 }
