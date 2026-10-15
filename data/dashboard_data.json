@@ -2,7 +2,7 @@
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
   "report_date": "2026-10-13",
-  "generated_at": "2026-10-14T17:45:43.940596+00:00",
+  "generated_at": "2026-10-15T17:35:02.421799+00:00",
   "window_days": 0,
   "start_year": 1975,
   "daily_mean_flow": 3250.0,
@@ -40,7 +40,7 @@
   },
   "narrative": "October 13's mean discharge at the Cisco gauge was 3,250 CFS, placing it in the 20th percentile of all October 13 readings since 1975. 41 of the past 51 years recorded a higher flow on this date. Discharge is 19% below the historical median for this time of year. Compared with only the years since 2000, October 13 ranks in the 19th percentile and is 20% below that more recent median.",
   "current_conditions": {
-    "flow": 3120.0,
-    "timestamp": "2026-10-14T17:00:00+00:00"
+    "flow": 5080.0,
+    "timestamp": "2026-10-15T17:00:00+00:00"
   }
 }
