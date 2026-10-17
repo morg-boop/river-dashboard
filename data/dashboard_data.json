@@ -1,46 +1,46 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-10-15",
-  "generated_at": "2026-10-16T17:09:24.088184+00:00",
+  "report_date": "2026-10-16",
+  "generated_at": "2026-10-17T16:07:25.206775+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 5270.0,
-  "rank_same_date_only": 12,
+  "daily_mean_flow": 4520.0,
+  "rank_same_date_only": 20,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 12,
-  "percentile": 78.4,
-  "median": 4070.0,
-  "mean": 4321.8,
-  "min": 2320.0,
-  "max": 9150.0,
-  "std": 1482.8,
-  "pct_diff_from_median": 29.5,
+  "rank_in_window": 20,
+  "percentile": 62.7,
+  "median": 4080.0,
+  "mean": 4349.8,
+  "min": 2290.0,
+  "max": 9000.0,
+  "std": 1451.3,
+  "pct_diff_from_median": 10.8,
   "badge": {
-    "label": "Above Normal",
-    "emoji": "🔵"
+    "label": "Near Normal",
+    "emoji": "🟢"
   },
   "since_megadrought": {
     "n_years_in_sample": 27,
     "n_observations": 26,
-    "rank_in_window": 4,
-    "percentile": 88.5,
+    "rank_in_window": 8,
+    "percentile": 73.1,
     "median": 3980.0,
-    "mean": 4002.3,
-    "min": 2330.0,
-    "max": 5790.0,
-    "std": 919.8,
-    "pct_diff_from_median": 32.4,
+    "mean": 3951.9,
+    "min": 2290.0,
+    "max": 6150.0,
+    "std": 898.0,
+    "pct_diff_from_median": 13.6,
     "badge": {
-      "label": "Above Normal",
-      "emoji": "🔵"
+      "label": "Near Normal",
+      "emoji": "🟢"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "October 15's mean discharge at the Cisco gauge was 5,270 CFS, placing it in the 78th percentile of all October 15 readings since 1975. 11 of the past 51 years recorded a higher flow on this date. Discharge is 30% above the historical median for this time of year. Compared with only the years since 2000, October 15 ranks in the 88th percentile and is 32% above that more recent median.",
+  "narrative": "October 16's mean discharge at the Cisco gauge was 4,520 CFS, placing it in the 63rd percentile of all October 16 readings since 1975. 19 of the past 51 years recorded a higher flow on this date. Discharge is 11% above the historical median for this time of year. Compared with only the years since 2000, October 16 ranks in the 73rd percentile and is 14% above that more recent median.",
   "current_conditions": {
-    "flow": 4780.0,
-    "timestamp": "2026-10-16T16:00:00+00:00"
+    "flow": 3520.0,
+    "timestamp": "2026-10-17T15:00:00+00:00"
   }
 }
