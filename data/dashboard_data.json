@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-10-20",
-  "generated_at": "2026-10-21T17:53:17.045481+00:00",
+  "report_date": "2026-10-21",
+  "generated_at": "2026-10-22T17:50:26.299670+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 2930.0,
+  "daily_mean_flow": 2850.0,
   "rank_same_date_only": 47,
   "n_years_in_sample": 52,
   "n_observations": 51,
   "rank_in_window": 47,
   "percentile": 9.8,
   "median": 4020.0,
-  "mean": 4240.4,
-  "min": 2150.0,
-  "max": 8800.0,
-  "std": 1354.4,
-  "pct_diff_from_median": -27.1,
+  "mean": 4233.1,
+  "min": 1920.0,
+  "max": 8760.0,
+  "std": 1372.0,
+  "pct_diff_from_median": -29.1,
   "badge": {
     "label": "Much Below Normal",
     "emoji": "🔴"
@@ -26,21 +26,21 @@
     "n_observations": 26,
     "rank_in_window": 24,
     "percentile": 11.5,
-    "median": 3895.0,
-    "mean": 3863.8,
-    "min": 2160.0,
-    "max": 6130.0,
-    "std": 864.6,
-    "pct_diff_from_median": -24.8,
+    "median": 3850.0,
+    "mean": 3855.0,
+    "min": 2140.0,
+    "max": 5870.0,
+    "std": 862.7,
+    "pct_diff_from_median": -26.0,
     "badge": {
       "label": "Below Normal",
       "emoji": "🟠"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "October 20's mean discharge at the Cisco gauge was 2,930 CFS, placing it in the 10th percentile of all October 20 readings since 1975. 46 of the past 51 years recorded a higher flow on this date. Discharge is 27% below the historical median for this time of year. Compared with only the years since 2000, October 20 ranks in the 12th percentile and is 25% below that more recent median.",
+  "narrative": "October 21's mean discharge at the Cisco gauge was 2,850 CFS, placing it in the 10th percentile of all October 21 readings since 1975. 46 of the past 51 years recorded a higher flow on this date. Discharge is 29% below the historical median for this time of year. Compared with only the years since 2000, October 21 ranks in the 12th percentile and is 26% below that more recent median.",
   "current_conditions": {
-    "flow": 2820.0,
-    "timestamp": "2026-10-21T17:00:00+00:00"
+    "flow": 3230.0,
+    "timestamp": "2026-10-22T17:00:00+00:00"
   }
 }
