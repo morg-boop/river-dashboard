@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-10-29",
-  "generated_at": "2026-10-30T18:24:36.638465+00:00",
+  "report_date": "2026-10-30",
+  "generated_at": "2026-10-31T17:29:41.237891+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 4270.0,
-  "rank_same_date_only": 28,
+  "daily_mean_flow": 3920.0,
+  "rank_same_date_only": 37,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 28,
-  "percentile": 45.1,
-  "median": 4390.0,
-  "mean": 4435.7,
-  "min": 2090.0,
-  "max": 7670.0,
-  "std": 1134.1,
-  "pct_diff_from_median": -2.7,
+  "rank_in_window": 37,
+  "percentile": 27.5,
+  "median": 4420.0,
+  "mean": 4477.3,
+  "min": 2200.0,
+  "max": 7480.0,
+  "std": 1082.0,
+  "pct_diff_from_median": -11.3,
   "badge": {
     "label": "Near Normal",
     "emoji": "🟢"
@@ -24,23 +24,23 @@
   "since_megadrought": {
     "n_years_in_sample": 27,
     "n_observations": 26,
-    "rank_in_window": 13,
-    "percentile": 50.0,
-    "median": 4265.0,
-    "mean": 4098.8,
-    "min": 2580.0,
-    "max": 5280.0,
-    "std": 733.2,
-    "pct_diff_from_median": 0.1,
+    "rank_in_window": 18,
+    "percentile": 30.8,
+    "median": 4385.0,
+    "mean": 4229.2,
+    "min": 2610.0,
+    "max": 5820.0,
+    "std": 788.2,
+    "pct_diff_from_median": -10.6,
     "badge": {
       "label": "Near Normal",
       "emoji": "🟢"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "October 29's mean discharge at the Cisco gauge was 4,270 CFS, placing it in the 45th percentile of all October 29 readings since 1975. 27 of the past 51 years recorded a higher flow on this date. Discharge is 3% below the historical median for this time of year. Compared with only the years since 2000, October 29 ranks in the 50th percentile and is 0% above that more recent median.",
+  "narrative": "October 30's mean discharge at the Cisco gauge was 3,920 CFS, placing it in the 28th percentile of all October 30 readings since 1975. 36 of the past 51 years recorded a higher flow on this date. Discharge is 11% below the historical median for this time of year. Compared with only the years since 2000, October 30 ranks in the 31st percentile and is 11% below that more recent median.",
   "current_conditions": {
-    "flow": 4020.0,
-    "timestamp": "2026-10-30T18:00:00+00:00"
+    "flow": 4060.0,
+    "timestamp": "2026-10-31T17:00:00+00:00"
   }
 }
