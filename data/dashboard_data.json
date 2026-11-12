@@ -1,22 +1,22 @@
 {
   "site_name": "Colorado River near Cisco, UT",
   "monitoring_location_id": "USGS-09180500",
-  "report_date": "2026-11-10",
-  "generated_at": "2026-11-11T19:59:36.520475+00:00",
+  "report_date": "2026-11-11",
+  "generated_at": "2026-11-12T20:38:16.630382+00:00",
   "window_days": 0,
   "start_year": 1975,
-  "daily_mean_flow": 3750.0,
-  "rank_same_date_only": 29,
+  "daily_mean_flow": 3580.0,
+  "rank_same_date_only": 32,
   "n_years_in_sample": 52,
   "n_observations": 51,
-  "rank_in_window": 29,
-  "percentile": 45.1,
-  "median": 3890.0,
-  "mean": 4130.0,
-  "min": 2480.0,
-  "max": 7040.0,
-  "std": 1124.9,
-  "pct_diff_from_median": -3.6,
+  "rank_in_window": 32,
+  "percentile": 37.3,
+  "median": 3800.0,
+  "mean": 4120.8,
+  "min": 2450.0,
+  "max": 7270.0,
+  "std": 1148.9,
+  "pct_diff_from_median": -5.8,
   "badge": {
     "label": "Near Normal",
     "emoji": "🟢"
@@ -24,23 +24,23 @@
   "since_megadrought": {
     "n_years_in_sample": 27,
     "n_observations": 26,
-    "rank_in_window": 11,
-    "percentile": 61.5,
-    "median": 3645.0,
-    "mean": 3555.4,
-    "min": 2630.0,
-    "max": 4510.0,
-    "std": 540.3,
-    "pct_diff_from_median": 2.9,
+    "rank_in_window": 13,
+    "percentile": 50.0,
+    "median": 3535.0,
+    "mean": 3541.9,
+    "min": 2620.0,
+    "max": 4490.0,
+    "std": 529.0,
+    "pct_diff_from_median": 1.3,
     "badge": {
       "label": "Near Normal",
       "emoji": "🟢"
     },
     "baseline_start_year": 2000
   },
-  "narrative": "November 10's mean discharge at the Cisco gauge was 3,750 CFS, placing it in the 45th percentile of all November 10 readings since 1975. 28 of the past 51 years recorded a higher flow on this date. Discharge is 4% below the historical median for this time of year. Compared with only the years since 2000, November 10 ranks in the 62nd percentile and is 3% above that more recent median.",
+  "narrative": "November 11's mean discharge at the Cisco gauge was 3,580 CFS, placing it in the 37th percentile of all November 11 readings since 1975. 31 of the past 51 years recorded a higher flow on this date. Discharge is 6% below the historical median for this time of year. Compared with only the years since 2000, November 11 ranks in the 50th percentile and is 1% above that more recent median.",
   "current_conditions": {
-    "flow": 3590.0,
-    "timestamp": "2026-11-11T19:00:00+00:00"
+    "flow": 3440.0,
+    "timestamp": "2026-11-12T20:00:00+00:00"
   }
 }
